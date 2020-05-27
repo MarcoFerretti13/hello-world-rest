@@ -8,7 +8,7 @@ import static ratpack.groovy.Groovy.ratpack
 ratpack {
     handlers {
         get {
-            render "/ - Hello World! Host:${InetAddress.getLocalHost()}"
+            render "/ - Hello World!ciao Host:${InetAddress.getLocalHost()}"
         }
         get(":name") {
             render "/ - Hello $pathTokens.name! Host:${InetAddress.getLocalHost()}"
